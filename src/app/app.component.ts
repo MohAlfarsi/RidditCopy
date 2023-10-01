@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'RiddCopy';
+  
+  loadedFeature = 'posts';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }

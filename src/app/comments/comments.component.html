@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-10">
+      <app-comment-edit
+        (commentAdded)="onCommentAdded($event)"></app-comment-edit>
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let comment of comments"
+        >
+            ( {{comment.rate}} / 10 ) <br>
+            {{comment.message}} 
+        </a>
+      </ul>
+    </div>
+  </div>

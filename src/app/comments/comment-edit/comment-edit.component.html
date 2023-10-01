@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-xs-12">
+      <form>
+
+        <div class="row">
+
+            <div class="col-sm-2 form-group">
+              <label for="amount">Rating out of 10</label>
+              <input 
+                type="number" 
+                id="amount" 
+                class="form-control"
+                #rateInput>
+            </div>
+
+          <div class="col-sm-12 form-group">
+            <label for="name">Comment Box </label>
+            <input 
+              type="text" 
+              id="name" 
+              class="form-control"
+              #commentInput>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+
+            <button class="btn btn-success" type="submit" (click)="onAddComment()"> Add </button>
+            <!--<button class="btn btn-danger" type="button"> Delete </button> -->
+            <button class="btn btn-primary" type="button"> Clear </button> 
+
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>

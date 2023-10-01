@@ -1,0 +1,20 @@
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">Create a Post</button>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-post-record
+      *ngFor="let postsEl of posts"
+      [posts]="postsEl"></app-post-record>
+  </div>
+</div>
+
+  

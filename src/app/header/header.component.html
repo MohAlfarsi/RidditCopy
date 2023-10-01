@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <span class="pull-left">
+        <img
+          [src]= "icon"
+          alt="RiddCopy"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+
+      <a href="#" class="navbar-brand">RiddCopy</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+      <ul class="nav navbar-nav">
+        <li><a href="#" (click)="onSelect('posts')">Posts</a></li>
+        <!--<li><a href="#" (click)="onSelect('Comments')">Comments</a></li>-->
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="text" style="width: 550px ;">
+          <input 
+            type="text"
+            id="amount" 
+            class="form-control">
+        </a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a href="#" class="dropdown-toggle" role="button">LogIn/SignUp <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Log-in</a></li>
+            <li><a href="#">Sign-Up</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+

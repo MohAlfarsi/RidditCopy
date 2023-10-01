@@ -1,0 +1,22 @@
+<div class="row">
+
+  <div class="col-md-12">
+
+    <app-post-detail
+      *ngIf="selectedPost; else infoText"
+      [posts]="selectedPost"></app-post-detail>
+
+      <ng-template #infoText>
+        <p>Please select a Post!</p>
+      </ng-template>
+
+  </div>
+
+  <div class="col-md-12">
+
+    <app-post-list></app-post-list>
+
+  </div>
+
+</div>
+
